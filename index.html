@@ -3,18 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr.Code's custom Animated Text</title>
-    <link rel="stylesheet" href="./assets/css/animatedText.css">
+    <title>Mr.Code's Custom Navbar</title>
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <script src="https://kit.fontawesome.com/8803726aa2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
-        <span class="txt-type" data-wait="3000" data-words='["Developer", "Designer", "Creator"]'></span>
-    </div>
 
-    <script type='text/javascript' src="./assets/js/animatedText.js"></script>
+    <nav>
+        <ul class='menu'>
+            <li class='logo'><a href="#">Logo</a></li>
+            <li class='item'><a href="#">Item 1</a></li>
+            <li class='item'><a href="#">Item 2</a></li>
+            <li class='item'><a href="#">Item 3</a></li>
+            <li class='item'><a href="#">Item 4</a></li>
+
+
+            <li class='item has-submenu'>
+                <a href="#" tabindex="0">Item 5</a>
+                <ul class="submenu">
+                    <li class='subitem'><a href="#">Submenu Item 1</a></li>
+                </ul>
+            </li>
+
+            <li class='item has-submenu-spread'>
+                <a href="#" tabindex="0"><span class='submenu-span'>Item 6</span><i class="fas fa-chevron-down icon-down"></i></a>
+                <ul class="submenu-spread">
+                    <li class='subitem'><a href="#">Submenu Item 1</a></li>
+                </ul>
+            </li>
+
+            <li class="item button"><a href="#">Button</a></li>
+            <li class="item button secondary"><a href="#">Secondary Button</a></li>
+            <li class="toggle"><a><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <script type='text/javascript' src="./assets/js/navbar.js"></script>
 </body>
 
 </html>
