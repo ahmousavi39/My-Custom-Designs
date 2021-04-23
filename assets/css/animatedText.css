@@ -1,3 +1,11 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+}
+
 /* Cursor */
 .txt-type > .txt {
     border-right: 0.2rem solid #777;
