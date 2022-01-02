@@ -1,0 +1,1 @@
+export {default as NavbarCom} from './Navbar/Navbar'
